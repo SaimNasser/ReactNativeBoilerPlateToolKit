@@ -1,6 +1,6 @@
 import { StyleSheet } from 'react-native';
 import { height, width } from 'react-native-dimension';
-import AppColors from '../../utills/AppColors';
+import AppColors from '../../../utills/AppColors';
 
 const styles = StyleSheet.create({
   mainViewContainer: {

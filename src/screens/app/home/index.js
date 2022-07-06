@@ -1,9 +1,8 @@
 import React from 'react';
 import { View, Text } from 'react-native';
 import { useDispatch } from 'react-redux';
-import Button from '../../components/Button';
-import ScreenWrapper from '../../components/ScreenWrapper';
-import { logout } from '../../redux/slices/authSlice';
+import { Button, ScreenWrapper } from '../../../components';
+import { logout } from '../../../redux/slices/authSlice';
 import styles from './styles';
 export default function Home({ navigation, route }) {
     const dispatch = useDispatch()
