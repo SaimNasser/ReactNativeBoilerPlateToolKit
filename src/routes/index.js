@@ -2,11 +2,11 @@ import * as React from 'react';
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { useSelector } from 'react-redux';
-import { selectIsLogin } from '../redux/slices/authSlice';
+import { LoginScreen } from '~screens/auth';
+import { HomeScreen } from '~screens/app';
+import { Loader } from '~components';
+import { selectIsLogin } from '~redux/slices/authSlice';
 import ScreenNames from './routes';
-import { HomeScreen } from '../screens/app'
-import { Loader } from '../components'
-import { LoginScreen } from '../screens/auth'
 const Stack = createNativeStackNavigator();
 
 export default function Routes() {

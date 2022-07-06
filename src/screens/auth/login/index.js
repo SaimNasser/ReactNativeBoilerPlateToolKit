@@ -2,9 +2,8 @@ import React from 'react';
 import { Text, View } from 'react-native';
 import styles from './styles';
 import { useDispatch } from 'react-redux';
-// import { login } from '../../../redux/slices/authSlice'
-import {ScreenWrapper,Button} from '../../../components'
-import { login } from '../../../redux/slices/authSlice';
+import { login } from '~redux/slices/authSlice';
+import { Button, ScreenWrapper } from '~components';
 export default function Login({ navigation, route }) {
     const dispatch = useDispatch()
     return (
